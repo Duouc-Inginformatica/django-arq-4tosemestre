@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'api',
 ]
 
 MIDDLEWARE = [
@@ -54,7 +55,7 @@ ROOT_URLCONF = 'arquitectura.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['C:/Users/sebas/Desktop/aquitectura/arquitectura/arquitectura/web'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -70,15 +71,28 @@ TEMPLATES = [
 WSGI_APPLICATION = 'arquitectura.wsgi.application'
 
 
+# carga de archivos static
+#STATICFILES_DIRS = [
+#    BASE_DIR / "static", 'C:/Users/sebas/Desktop/aquitectura/arquitectura/arquitectura/web/static',
+#]
+
+
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',   # vamosno a mysql x xammp
+#         'NAME': 'Arquitectura',
+#         'USER': 'root',
+#         'PASSWORD': '',
+#         'HOST': 'localhost',
+#         'PORT': '3306',
+#         'OPTIONS': {
+#             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'" #por los errores a warning
+#         }
+#     }
+# }
 
 
 # Password validation
@@ -115,7 +129,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field

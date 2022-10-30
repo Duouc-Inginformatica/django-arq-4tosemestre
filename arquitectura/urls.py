@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from arquitectura.vista import login
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', login, name='login'),
 ]
