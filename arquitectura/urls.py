@@ -13,11 +13,13 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from unittest.mock import patch
 from django.contrib import admin
 from django.urls import path
-from arquitectura.vista import login
+from arquitectura.vista import login, profe
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', login, name='login'),
+    path('login/', login, name='login'),
+    path('profe/', profe, name='profe'),
 ]

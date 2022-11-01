@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,500,500i,700,800i");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway';
+}
+ul li a{
+    margin-right: 20px;
+}
+
+.navbar {
+    right: -2;
+    left: 0;
+    display: block;
+    border: black 1px solid;
+    background-color: white;
+    
+}
+
+.nav-icon {
+  margin-top: 7px;
+}
+
+.peralta {
+    position: relative;
+    right: -44rem;
+}
