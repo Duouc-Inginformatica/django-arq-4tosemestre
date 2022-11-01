@@ -55,7 +55,7 @@ ROOT_URLCONF = 'arquitectura.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['C:/Users/sebas/Desktop/aquitectura/arquitectura/arquitectura/web'],
+        'DIRS': ['C:\Users\alej1\OneDrive\Carrera\4Cuarto Semestre\Arquitectura\S3\Proyecto\django-arq-4tosemestre\arquitectura\web'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
