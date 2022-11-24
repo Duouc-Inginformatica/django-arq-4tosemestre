@@ -1,0 +1,25 @@
+.btn-seba-blue {
+    background: #4302f7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #00c3ff, #6b35fe);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #00ddff, #6b35fe); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    border: 3px solid #eee;
+}
+
+.btn-seba-blue:hover {
+    background: #02f789;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff0000, #ff00aa);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff0000, #ff00aa); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    border: 3px solid #eee;
+}
+
+/* .btn-rounded {
+    border-radius: 35px;
+}
+
+.btn-fab {
+    height: 50px;
+    width: 53px;
+    border-radius: 50%;
+} */
