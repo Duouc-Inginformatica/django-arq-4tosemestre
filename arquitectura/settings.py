@@ -82,15 +82,15 @@ WSGI_APPLICATION = 'arquitectura.wsgi.application'
 
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.mysql',   # vamosno a mysql x xammp
-#         'NAME': 'Arquitectura',
-#         'USER': 'root',
-#         'PASSWORD': '',
-#         'HOST': 'localhost',
-#         'PORT': '3306',
-#         'OPTIONS': {
-#             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'" #por los errores a warning
-#         }
+#         'ENGINE': 'django.db.backends.oracle',   # vamosno a mysql x xammp
+#         'NAME': 'QOYGIF11X5IML5TP',
+#         'USER': 'admin',
+#         'PASSWORD': 'Database11#',
+#         'HOST': 'ocid1.autonomousdatabase.oc1.sa-santiago-1.anzwgljrm3txhqaaonjty5j6n3s5yh3yrtv2resgkitrg5ru2fdlgx6nmdzqOcultar',
+#         'PORT': '1521',
+#         # 'OPTIONS': {
+#         #     'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
+#         # }
 #     }
 # }
 

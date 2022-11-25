@@ -14,3 +14,6 @@ def tienda(request):
 
 def profe(request):
     return render(request, 'profe.html')
+
+def prueba(request):
+    return render(request, 'prueba.html')

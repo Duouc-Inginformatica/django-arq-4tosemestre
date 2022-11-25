@@ -1,0 +1,73 @@
+{% load static %}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js" integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!------ Include the above in your HEAD tag ---------->
+<link href="{% static 'clase.css' %}" rel="stylesheet"> 
+
+<section class="testimonial py-5" id="testimonial">
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-4 py-5 bg-primary text-white text-center ">
+                <div class=" ">
+                    <div class="card-body">
+                        <img src="{% static 'img/duoc.png' %}" style="width:30%">
+                        <h2 class="py-3">Registro de clase</h2>
+                        <p>La educacion es el pilar fundamental de la vida sin educacion no hay vida.
+
+</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 py-5 border">
+                <h4 class="pb-4">Por favor ingresa los datos necesarios</h4>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <input id="Full Name" name="Full Name" placeholder="Nombre del profesor" class="form-control" type="text">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <input type="text" class="form-control" id="inputEmail4" placeholder="costo">
+                        </div>
+                      </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input id="Mobile No." name="Mobile" placeholder="numero de telefono." class="form-control" required="required" type="text">
+                        </div>
+                        <div class="form-group col-md-6">
+                                  
+                                  <select id="inputState" class="form-control">
+                                    <option selected>Asignatura ...</option>
+                                    <option> Matematica</option>
+                                    <option>Ingles</option>
+                                    <option> Lenguaje</option>
+                                    <option>Quimica</option>
+                                  </select>
+                        </div>
+                        <div class="form-group col-md-12">
+                                  <textarea id="comment" name="comment" cols="40" rows="5" class="form-control" placeholder="comentario del profesor"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <div class="form-group">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                                  <label class="form-check-label" for="invalidCheck2">
+                                    <small>Aceptar crear una clase bajo los requerimientos de politica y calidad.</small>
+                                  </label>
+                                </div>
+                              </div>
+                    
+                          </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <button type="button" class="btn btn-danger">Crear</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

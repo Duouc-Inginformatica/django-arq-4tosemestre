@@ -17,9 +17,13 @@ $("#signup").click(function() {
                  rules: {
                    
                    email: {
-                     required: true,
-                     email: true
+                     required: false,
+                     email: false
                    },
+                   Username: {
+                    required: true,
+                    email: false
+                  },
                    password: {
                      required: true,
                      
@@ -32,6 +36,11 @@ $("#signup").click(function() {
                      required: "Ingresa una contraseña valida",
                     
                    }
+
+                   Username: {
+                    required: "Ingresa un nombre valida",
+                   
+                  }
                    
                  },
                  submitHandler: function(form) {

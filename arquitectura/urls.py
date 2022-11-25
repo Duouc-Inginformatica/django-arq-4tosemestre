@@ -21,7 +21,7 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
 # from api.views import index
-from arquitectura.vista import  login, index, calendario, profe, tienda
+from arquitectura.vista import  login, index, calendario, profe, tienda, prueba
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -30,4 +30,5 @@ urlpatterns = [
     path('', index, name='index'),
     path('calendario', calendario, name='calendario'),
     path('profe', profe, name='profe'),
+    path('prueba', prueba, name='prueba'),
 ]
