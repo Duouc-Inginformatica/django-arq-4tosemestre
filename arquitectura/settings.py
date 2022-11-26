@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'api',
+    'api_dote',
 ]
 
 MIDDLEWARE = [
@@ -80,19 +81,16 @@ WSGI_APPLICATION = 'arquitectura.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.oracle',   # vamosno a mysql x xammp
-#         'NAME': 'QOYGIF11X5IML5TP',
-#         'USER': 'admin',
-#         'PASSWORD': 'Database11#',
-#         'HOST': 'ocid1.autonomousdatabase.oc1.sa-santiago-1.anzwgljrm3txhqaaonjty5j6n3s5yh3yrtv2resgkitrg5ru2fdlgx6nmdzqOcultar',
-#         'PORT': '1521',
-#         # 'OPTIONS': {
-#         #     'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
-#         # }
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'Arquitectura',
+        'USER': 'admin',
+        'PASSWORD': 'Arquitectura2022.',
+        'HOST': 'database-1.cp5vxsdaeocx.us-east-2.rds.amazonaws.com',
+        'PORT': '3306',
+    }
+}
 
 
 # Password validation

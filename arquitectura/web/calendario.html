@@ -61,16 +61,23 @@
       plugins: [ 'interaction', 'dayGrid' ],
       defaultDate: '2022-11-23',
       editable: true,
-      eventLimit: false, // allow "more" link when too many events
-      events: [
-        {
-          title: 'El nico se la come',
-          // url: 'http://google.com/',
-          start: '2022-11-30',
-          // end: '2022-12-1'
-          description: 'Ingles'
-        }
-      ]
+      dateClick: function(info) {
+    alert('Clicked on: ' + info.dateStr);
+    alert('Coordinates: ' + info.jsEvent.pageX + ',' + info.jsEvent.pageY);
+    alert('Current view: ' + info.view.type);
+    // change the day's background color just for fun
+    info.dayEl.style.backgroundColor = 'red';
+  },
+      // eventLimit: false, // allow "more" link when too many events
+      // events: [
+      //   {
+      //     title: 'El nico se la come',
+      //     // url: 'http://google.com/',
+      //     start: '2022-11-30',
+      //     // end: '2022-12-1'
+      //     description: 'Ingles'
+      //   }
+      // ]
     });
 
     calendar.render();

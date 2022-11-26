@@ -21,14 +21,22 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
 # from api.views import index
-from arquitectura.vista import  login, index, calendario, profe, tienda, prueba
+from arquitectura.vista import  login, index, calendario, profe, tienda, prueba, editare, editalola, eliminare, form2, registrare
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('tienda', tienda, name='tienda'),
     path('login', login, name='login'),
     path('', index, name='index'),
+    path('index', index, name='index'),
+     path('api_dote/', include('api_dote.urls')), #para que se pueda acceder a la pagina de api_lola
     path('calendario', calendario, name='calendario'),
     path('profe', profe, name='profe'),
+     path('form2', form2, name='form2'), #para que se pueda acceder a la pagina de index
     path('prueba', prueba, name='prueba'),
+     path('editare/<id>', editare, name='editare'), #para que se pueda acceder a la pagina de editar
+    path('editalola', editalola, name='editalola'), #para que se pueda acceder a la pagina de editar
+    path('eliminare/<id>', eliminare, name='eliminare'), #para que se pueda acceder a la pagina de eliminar
+    path('registrare', registrare, name='registrare'), #para que se pueda acceder a la pagina de registrar
 ]
+
