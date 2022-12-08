@@ -56,7 +56,7 @@ ROOT_URLCONF = 'arquitectura.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['C:/Users/sebastian/Desktop/django-arq-4tosemestre/arquitectura/web'],
+        'DIRS': ['/home/seba3567/Escritorio/django-arq-4tosemestre/arquitectura/web/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -83,12 +83,15 @@ WSGI_APPLICATION = 'arquitectura.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'Arquitectura',
-        'USER': 'admin',
-        'PASSWORD': 'Arquitectura2022.',
-        'HOST': 'database-1.cp5vxsdaeocx.us-east-2.rds.amazonaws.com',
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.oracle',
+        'NAME': 'localhost:1521/xe',
+        'USER': 'test4',
+        'PASSWORD': 'asd',
+        'TEST': {
+            'USER': 'default_test',
+            'TBLSPACE': 'default_test_tbls',
+            'TBLSPACE_TMP': 'default_test_tbls_tmp',
+        },
     }
 }
 
